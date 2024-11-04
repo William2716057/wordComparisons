@@ -18,5 +18,10 @@ sentence2 = nlp(sentence2)
 
 print("Sentence similarity: ", sentence1.similarity(sentence2))
 
-#sentence1_verbs = 
 print(" ".join([token.lemma_ for token in sentence1 if token.pos_ == "VERB"]))
+print(" ".join([token.lemma_ for token in sentence1 if token.pos_ == "NOUN"]))
+print(" ".join([token.lemma_ for token in sentence1 if token.pos_ == "ADJ"]))
+
+print(" ".join([token.lemma_ for token in sentence2 if token.pos_ == "VERB"]))
+print(" ".join([token.lemma_ for token in sentence2 if token.pos_ == "NOUN"]))
+print(" ".join([token.lemma_ for token in sentence2 if token.pos_ == "ADJ"]))
